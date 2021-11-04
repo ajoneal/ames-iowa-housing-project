@@ -1,7 +1,7 @@
-# Housing Market in Ames, Iowa
+# Predicting the price of a house in Ames, Iowa
 
 
-## Project Description
+## Project Description/Problem
 
 I was recently hired by a real estate agency in Ames, Iowa and asked to help them get a better understanding of the housing market. In order to do so, they asked me to come up with a model that will help them best predict the price of a house at sale based on the current housing data provided to me by the real estate company.
 
