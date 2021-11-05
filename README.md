@@ -26,4 +26,18 @@ The data given by the real estate company had several missing values in the .csv
 After the cleaning was complete, I created dummy columns for some categorical features and gave values to ordinal columns so that I would be able to use them in my models.  I created a heatmap and some pairplots with the training data to check which features were highly correlated with saleprice to decide which columns to use as a baseline model and decided that anything with a .5 correlation or higher would go into that first linear regression model.  I used all of the previously created variables for the first 3 models that I created, then created some interaction features with the quality and condition features then using those features for a linear regression model and lass model on the 4th and 5th models.
 
 ---
-## Modeling and Analysis
+## Modeling, Analysis, and Recommendations
+
+I created 5 different models to help predict sale price.  My 1st baseline linear regression model consisted of features that were highly correlated with the sale price.  The model scored fairly well and the distribution of residuals suggested there was some room for improvement.  For the 2nd model I threw all of the numeric data available at the same model to give it more information.  The model scored 3% higher in it's cross-validation score and saw some improvement in residuals, but I believed I could make it better.  For the 3rd model, I scaled the data however it did not change much on the performance and the U-shaped pattern is residuals vs predictions still existed as well as a larger spread as the price increased.  I then created some feature interactions between the different quality and condition variables in hopes increasing performance of the model.  The 4th model I created with feature interactions scored the best out of all of the models I created and addressed the issues with the residuals.  I then created a lasso model with the same data, however it scored slightly lower than the previous model I had created.  It did show me which features I could rid possibly rid my model of to create a simpler model going forward.
+
+Of the 5 models I created, I would recommend the 4th model for the real estate agency to use to help them get a better understanding of the price of a house at sale.  This will allow them to provide better insight into potential buyers and sellers that they work with.  I would also recommend creating another model based on the results of the lasso model, dropping the features with low coefficients and checking to see if it improves the current model.  Finally, I would recommend the agency get more data on higher priced houses to better understand that aspect of the housing market.
+
+---
+## Presentation link
+
+https://docs.google.com/presentation/d/137j8hflPYz7kjep576jN_ZRbyOTtAEPr4RO_gtlyowY/edit?usp=sharing
+
+
+
+
+
